@@ -1,0 +1,30 @@
+#!/bin/sh
+# Gradle Wrapper script for Maya Queen Android
+APP_HOME="$(cd "$(dirname "$0")" && pwd -P)"
+DEFAULT_JVM_OPTS="-Xmx2048m -Dfile.encoding=UTF-8"
+
+# Check java
+if [ -n "$JAVA_HOME" ] ; then
+    JAVACMD="$JAVA_HOME/bin/java"
+else
+    JAVACMD="java"
+fi
+
+if ! command -v "$JAVACMD" >/dev/null 2>&1; then
+    echo "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH." >&2
+    echo "Please set JAVA_HOME in your environment to the path of your Java installation." >&2
+    exit 1
+fi
+
+WRAPPER_JAR="$APP_HOME/gradle/wrapper/gradle-wrapper.jar"
+if [ ! -f "$WRAPPER_JAR" ]; then
+    echo "[*] Gradle wrapper JAR not cached locally; executing system gradle if installed..."
+    if command -v gradle >/dev/null 2>&1; then
+        exec gradle "$@"
+    else
+        echo "Please install gradle or run within Android Studio." >&2
+        exit 1
+    fi
+fi
+
+exec "$JAVACMD" $DEFAULT_JVM_OPTS -jar "$WRAPPER_JAR" "$@"

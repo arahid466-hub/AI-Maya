@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Maya Queen AI</string>
+    <string name="app_subtitle">Personal Desktop &amp; Android Assistant</string>
+    <string name="server_url_hint">http://127.0.0.1:8080</string>
+    <string name="input_placeholder">Type directive in English...</string>
+    <string name="tap_to_speak">Tap orb to speak</string>
+    <string name="listening">Listening to you...</string>
+    <string name="speaking">Maya speaking in Hindi...</string>
+    <string name="stop_speech">Stop Audio</string>
+    <string name="clear_chat">Clear Conversation</string>
+</resources>

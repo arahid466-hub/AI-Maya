@@ -1,0 +1,16 @@
+{
+  "authToken": "maya_replace_with_secure_random_token",
+  "localAiUrl": "http://127.0.0.1:11434",
+  "activeModel": "gemini-3.8-flash",
+  "activeEngine": "builtin",
+  "memoryEnabled": true,
+  "maxHistoryTurns": 10,
+  "defaultLanguage": "en",
+  "audioLanguage": "hi",
+  "providers": {
+    "builtin": { "enabled": true, "name": "Maya Turbo Engine" },
+    "gemini": { "enabled": false, "apiKey": "", "model": "gemini-3.8-flash" },
+    "ollama": { "enabled": false, "endpoint": "http://127.0.0.1:11434", "model": "qwen2.5:0.5b" },
+    "groq": { "enabled": false, "apiKey": "", "model": "llama-3.3-70b-versatile" }
+  }
+}

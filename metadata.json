@@ -1,0 +1,10 @@
+{
+  "name": "Maya AI - Desktop JARVIS & Smart Home Assistant",
+  "description": "JARVIS-style AI assistant with free audio-to-audio Hindi voice, live web search, smart home controls, reminders, Termux server & Android APK integration.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

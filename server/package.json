@@ -1,0 +1,20 @@
+{
+  "name": "maya-termux-server",
+  "version": "2.0.0",
+  "description": "Maya Queen AI - Local Termux Backend Server for Android & Desktop",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "author": "Maya Queen AI Project",
+  "license": "Apache-2.0"
+}
